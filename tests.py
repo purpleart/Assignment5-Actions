@@ -22,7 +22,7 @@ class TestCase(unittest.TestCase):
         expected_first, expected_last = 0, 5
         actual_first, actual_last = task.get_first_last_elements(my_list)
         self.assertEqual(expected_first, actual_first)
-        self.assertEqual(expected_lat, actual_last)
+        self.assertEqual(expected_last, actual_last)
 
 
 if __name__ == '__main__':
