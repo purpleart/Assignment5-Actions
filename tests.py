@@ -17,7 +17,7 @@ class TestCase(unittest.TestCase):
         expected = 25 * math.pi
         self.assertEqual(expected, task.calculate_area(5))
 
-    def test_get_first_last_elements(self): 
+    def test_get_first_last_elements(self):
         my_list = [0, 1, 2, 3, 4, 5]
         expected_first, expected_last = 0, 5
         actual_first, actual_last = task.get_first_last_elements(my_list)
