@@ -29,7 +29,7 @@ class TestCase(unittest.TestCase):
         date1 = date(2020, 2, 20)
         date2 = date(2020, 2, 21)
         expected = 1
-        self.assertEqual(expected, task.get_delta_days(date1, date2)) 
+        self.assertEqual(expected, task.get_delta_days(date1, date2))
 
 
 if __name__ == '__main__':
