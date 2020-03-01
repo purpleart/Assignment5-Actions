@@ -1,5 +1,6 @@
 import unittest
 import math
+from datetime import date
 import task
 
 
@@ -23,6 +24,12 @@ class TestCase(unittest.TestCase):
         actual_first, actual_last = task.get_first_last_elements(my_list)
         self.assertEqual(expected_first, actual_first)
         self.assertEqual(expected_last, actual_last)
+
+    def test_delta_days(self):
+        date1 = date(2020, 2, 20)
+        date2 = date(2020, 2, 21)
+        expected = 1
+        self.assertEqual(expected, get_delta_days(date1, date2)) 
 
 
 if __name__ == '__main__':
