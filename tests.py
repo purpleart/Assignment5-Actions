@@ -1,5 +1,6 @@
 import unittest
 import task
+import math
 
 
 class TestCase(unittest.TestCase):
@@ -12,6 +13,9 @@ class TestCase(unittest.TestCase):
         expected = "failure"
         self.assertNotEqual(expected, task.firstrun())
 
+    def test_area(self):
+        expected = 25 * math.pi
+        self.assertEqual(expected, task.calculate_area(5))
 
 if __name__ == '__main__':
     unittest.main()
