@@ -17,5 +17,6 @@ class TestCase(unittest.TestCase):
         expected = 25 * math.pi
         self.assertEqual(expected, task.calculate_area(5))
 
+
 if __name__ == '__main__':
     unittest.main()
